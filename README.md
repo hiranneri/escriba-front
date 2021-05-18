@@ -1,24 +1,29 @@
 # escriba-trabalhe
 
-## Project setup
-```
-npm install
-```
+Este projeto é a versão front corrigida da página escriba.com.br/trabalhe-conosco, onde foi corrigido os filtros de vagas na página
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# O que faz?
+ Consome uma API que retorna as vagas disponíveis e exibe em tela, podendo filtrá-las pelo os setores: Comercial, Administrativas ou Técnicas.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# Requisitos obrigatórios
 
-### Lints and fixes files
-```
-npm run lint
-```
+ - VueJS 3
+ 
+# Tecnologias
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- HTML
+- CSS3
+- Javascript
+- VueJS 3
+
+# Como executar ?
+
+Ao baixar o projeto, acesse a pasta do mesmo e no seu prompt de comando execute:
+
+<code>npm i</code>    
+    
+<code>npm run serve</code>
+
+# Link Oficial
+
+Em breve.
