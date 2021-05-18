@@ -26,4 +26,4 @@ Ao baixar o projeto, acesse a pasta do mesmo e no seu prompt de comando execute:
 
 # Link Oficial
 
-Em breve.
+https://escriba-front.vercel.app/
