@@ -25,8 +25,11 @@ export default {
 </script>
 <style scoped>
     header{
-         background-color: black;
-         padding: 20px 0;
+        background-color: black;
+        padding: 20px 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
     }
     .menu{
        

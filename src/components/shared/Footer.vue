@@ -56,6 +56,9 @@ export default {
         color: rgba(255, 255, 255, 0.557);
         background-color: black;
         padding: 30px;
+         font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
     }
     span{
         color: white;

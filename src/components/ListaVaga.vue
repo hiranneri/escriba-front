@@ -4,7 +4,7 @@
             <li v-for="vaga of vagasFiltradas" :key="vaga.descricao">
                 <div class="data-vaga">{{ vaga.datapublicacao }}</div>
                 <div class="info-vaga">
-                    <div class="descricao-vaga">
+                    <div class="cargo-vaga">
                         {{ vaga.descricao }}
                     </div>
                     <div class="atividades-vaga">
@@ -110,7 +110,7 @@ export default {
     .data-vaga{
         background-color: yellow;
         color: black;
-        font-size: 11px;
+        font-size: 13px;
         font-weight: bold;
         padding: 10px;
         
@@ -119,28 +119,28 @@ export default {
         background-color: white;
         
     }
-    .descricao-vaga{
+    .cargo-vaga{
         color: black;
-        font-size: 16px;
+        font-size: 18px;
         padding: 15px;
         font-weight:bold;
     }
     .atividades-vaga{
-        font-size: 13px;
+        font-size: 15px;
         padding-bottom: 15px;
         margin-left: 10px;
         margin-right: 10px;
         text-align: justify;
     }
     .setor-vaga{
-        font-size: 10px;
+        font-size: 12px;
         margin-left: 10px;
     }
     .detalhes-vaga{
         background-color: yellow;
         color: black;
         text-align: center;
-        font-size: 11px;
+        font-size: 13px;
         padding: 15px;
     }
     .detalhes-vaga:hover{
