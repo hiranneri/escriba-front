@@ -37,10 +37,13 @@ export default {
     },
 
     mounted(){
+       
         Vagas.listar().then((results)=>{
             
             this.vagas = this.formatarDataVaga(results.data);
             this.vagasFiltradas = this.vagas;
+        }).finally(()=>{
+            this.$emit('update', false)
         })
     },
     methods:{

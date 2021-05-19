@@ -32,27 +32,36 @@
                 </button>
             </div>
             <h4>Vagas Disponíveis</h4>
-            <ListaVaga ref="vaga"/>
+            <div v-if="loading === true">
+                <Loader class="loader"/>
+            </div>
+            <ListaVaga ref="vaga" @update="mostrarVagas"/>
+           
         </div>
     </div>
 </template>
 <script>
 import ListaVaga from './ListaVaga'
+import Loader from './Loader'
 export default {
     name:'Vaga',
     data(){
         return {
             vagas: [],
-            vagasFiltradas:[]
+            vagasFiltradas:[],
+            loading:true
         }
     },
     components:{
         ListaVaga, 
-
+        Loader
     },
     methods:{
         filtrarVagas(setor){
             this.$refs.vaga.filtrarVagas(setor);
+        },
+        mostrarVagas(carregado){
+            this.loading = carregado
         }
     }
 }
@@ -123,6 +132,10 @@ export default {
        padding-bottom: 40px;
        color: #51514d;
        font-size: 80px;
+   }
+   .loader{
+       position: absolute;
+       left: 50%;
    }
 
 </style>
