@@ -1,34 +1,33 @@
 <template>
     <div class="conteiner">
-        <div>
-            <img src="../assets/img/trabalhe-conosco.jpg" alt="Imagem de aperto de maõs entre duas pessoas" class="imagem-trabalhe">  
-                <div class="trabalhe-conosco">
-                    <p>
-                        <span>TRABALHE CONOSCO </span><br><br>
-                        Venha trabalhar na maior desenvolvedora de softwares para cartórios extrajudiciais do Brasil.Faça parte de um grande time que 
-                        <br>contribui para a segurança jurídica do país, onde a ética e as boas práticas fazem parte do nosso DNA.
-                        <br><br>
-                        Buscamos talentos motivados que adoram desafios e estão determinados a prover inovação através da tecnologia 
-                        para os cartórios.
-                        <br><br>
-                        Se você é assim e compartilha desses mesmos princípios, venha trabalhar conosco.         
-                    </p>
-                </div>
+        <section>
+            <img src="../assets/img/trabalhe-conosco.jpg" alt="Imagem de aperto de maõs entre duas pessoas" id="imagem-trabalhe">  
+            <h2>TRABALHE CONOSCO</h2>
+        </section>
+        <div class="cultura-empresa">
+            <p>
+                Venha trabalhar na maior desenvolvedora de softwares para cartórios extrajudiciais do Brasil e fazer parte de um grande time.<br> 
+                Buscamos talentos motivados, que adoram desafios e estão determinados a prover inovação através da tecnologia para os cartórios. <br><br>
+                Temos 30 anos de história e a ética e boas práticas estão no nosso DNA.
+
+                A Escriba acredita e valoriza a diversidade. <br>Respeitamos a pluralidade e aceitamos as pessoas como elas se reconhecem e são. <br>
+                Por isso, nossas vagas são para todos, sem distinção. 
+            </p>
         </div>
         <div class="container-vagas">
             <h3>SELECIONE UMA ÁREA:</h3>
             <div class="filtroVagas">
                 <button @click="filtrarVagas(1)">
-                    <img src="../assets/img/administrativo.png" alt="Botão Filtrar Vagas Administrativas">
+                    <img src="../assets/img/administrativo.png" alt="Botão Filtrar Vagas Administrativas" class="icone-filtrovagas">
                 </button>
                 <button @click="filtrarVagas(2)">
-                    <img src="../assets/img/negocios.png" alt="Botão Filtrar Vagas de Negócios">
+                    <img src="../assets/img/negocios.png" alt="Botão Filtrar Vagas de Negócios" class="icone-filtrovagas">
                 </button>
                 <button @click="filtrarVagas(3)">
-                    <img src="../assets/img/suporte.png" alt="Botão Filtrar Vagas de Suporte">
+                    <img src="../assets/img/suporte.png" alt="Botão Filtrar Vagas de Suporte" class="icone-filtrovagas" >
                 </button>
                 <button @click="filtrarVagas(4)">
-                    <img src="../assets/img/escriba-vagas.png" alt="Botão para mostrar todas as vagas" class="img-escriba">
+                    <img src="../assets/img/escriba-vagas.png" alt="Botão para mostrar todas as vagas" class="icone-filtrovagas icone-filtroescriba">
                 </button>
             </div>
             <h4>Vagas Disponíveis</h4>
@@ -70,12 +69,26 @@ export default {
     .conteiner{
          font-family: 'Roboto', sans-serif;
         font-size: 20px;
+        box-sizing: border-box;
        
     }
-    .imagem-trabalhe{
-       
-        height: 300px;
+    section{
+        height: 100%;
+    }
+    #imagem-trabalhe{       
+        height: 500px;
         width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    h2{
+        position: absolute;
+        color: white;
+        top: 150px;
+        left: 30%;
+        right: 20%;
+        font-size: 80px;
+
     }
     .trabalhe-conosco{
         display: flex;
@@ -83,13 +96,15 @@ export default {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
-        background-color: green;
     }
     p{
         position: absolute;
-        margin-top: -250px;       
+        top: 350px;
+        text-align: center;
         color: white;
         font-weight: bolder;
+        left: 15%;
+        
        
     }
    span{
@@ -108,6 +123,9 @@ export default {
    .filtroVagas{
        text-align: center;
    }
+   .icone-filtroescriba{
+       border-radius: 10%;
+   }
    button{
         margin: 40px;
         height: 165px;
@@ -118,7 +136,7 @@ export default {
         
    }
    .img-escriba{
-       width: 130px;
+       width: 100%;
        height: 145px;
        border-radius: 10px;
    }
@@ -136,6 +154,47 @@ export default {
    .loader{
        position: absolute;
        left: 50%;
+   }
+   @media (max-width: 600px){
+
+       H2{
+            font-size: 55px;
+            top: 115px;
+            text-align: center;
+            left: 20px;
+       }
+       p{
+            top: 270px;
+            left: 0;
+            margin-left: 20px;
+            margin-right: 20px;
+       }
+       #imagem-trabalhe{
+            height: 695px;
+       }
+       .filtroVagas{
+           margin-left: 8px;
+       }
+        button{
+         width: 35%;
+         height: 120px;
+         margin-bottom: 10%;
+         margin-right:5%;
+         margin-left: 0;
+         
+       }
+       .icone-filtrovagas{
+           width: 75%;
+       }
+       .img-escriba{
+            width: 70%;
+            height: 70px;
+            border-radius: 5px;
+       }
+       h4{
+           font-size: 55px;
+       }
+
    }
 
 </style>

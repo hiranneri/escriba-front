@@ -48,6 +48,10 @@ export default {
         padding-top: 40px;
         padding-bottom: 50px ;
     }
+    #imgEscriba{
+        width: 90%;
+        height: 50px;
+    }
     .item-menu{
         text-decoration: none;
         color: white; 
