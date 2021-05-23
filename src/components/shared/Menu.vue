@@ -5,7 +5,7 @@
         </router-link>
 
         <nav class="navegacao">
-            <button v-on:click="toogleMenu" v-on:touchstart="toogleMenu" class="botao-mobile">Menu
+            <button v-on:click="toogleMenu"  @touchstart="toogleMenu" class="botao-mobile">Menu
                 <span class="icone-hamburger"></span>
             </button>
 
@@ -25,7 +25,10 @@ export default {
     props:['rotas'],
     methods:{
         toogleMenu(event){
-            if(event==='touchstart') event.preventDefault();
+            if(event.type==='touchstart'){
+                event.preventDefault();
+
+            }
             let menuNav = document.querySelector('.navegacao');
             menuNav.classList.toggle('active')
         }
