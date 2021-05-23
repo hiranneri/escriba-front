@@ -25,7 +25,7 @@
             </nav>
         </div> 
         <div class="rodape-atendimento">
-            <p>Central de Atendimento: <span>[41] 2106-1212</span>  </p>
+            <p>Central de Atendimento: <br> <span>[41] 2106-1212</span>  </p>
         </div>
     </footer>
 </template>
@@ -38,10 +38,8 @@ export default {
     footer{
         background-color: #1e1e20;
         position: relative;
-    }
-    #imgEscriba{
-        padding-top:20px ;
-    }
+        max-width: 100%;
+    }  
     .rodape-header{
         padding: 20px;
         width: 940px;
@@ -68,5 +66,35 @@ export default {
         position: absolute;
         right: 0;
         top: 15px;
+    }
+    @media (max-width: 600px){
+        #imgEscriba{
+            padding: 30px;
+            margin-left: 20px;
+        }
+        nav{
+            position: static;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        ul{
+            text-align: center;
+        }
+ 
+        li{
+            display: inline-block;
+        }
+        footer{
+            max-width: 400px;
+        }
+        .rodape-header{
+            max-width: 320px;
+            margin: 0;
+            padding: 0;
+        }
+        .rodape-atendimento{
+            max-width: 320px;
+        }
+    
     }
 </style>
