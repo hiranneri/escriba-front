@@ -97,18 +97,21 @@ export default {
 </script>
 <style scoped>
     .lista-vagas{
+        max-width: 1200px;
         padding-bottom: 100px;
+        margin: 0 auto;
     }
     .vagas{
-        width: 940px;
-        margin:0 auto;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+
     }
     .vagas li{
-        display: inline-block;
+        margin:1.5% 1.5%;
         list-style: none;
-        width: 30%;
-        margin:0 1.5%;
-        margin-bottom: 20px;
+        flex: 0 1 350px;
     }
     .data-vaga{
         background-color: yellow;
