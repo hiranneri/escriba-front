@@ -1,10 +1,7 @@
 <template>
     <div class="conteiner">
         <section>
-            <img src="../assets/img/trabalhe-conosco.jpg" alt="Imagem de aperto de maõs entre duas pessoas" id="imagem-trabalhe">  
             <h2>TRABALHE CONOSCO</h2>
-        </section>
-        <div class="cultura-empresa">
             <p>
                 Venha trabalhar na maior desenvolvedora de softwares para cartórios extrajudiciais do Brasil e fazer parte de um grande time.<br> 
                 Buscamos talentos motivados, que adoram desafios e estão determinados a prover inovação através da tecnologia para os cartórios. <br><br>
@@ -13,7 +10,7 @@
                 A Escriba acredita e valoriza a diversidade. <br>Respeitamos a pluralidade e aceitamos as pessoas como elas se reconhecem e são. <br>
                 Por isso, nossas vagas são para todos, sem distinção. 
             </p>
-        </div>
+        </section>
         <div class="container-vagas">
             <h3>SELECIONE UMA ÁREA:</h3>
             <div class="filtroVagas">
@@ -73,21 +70,21 @@ export default {
        
     }
     section{
-        height: 100%;
-    }
-    #imagem-trabalhe{       
-        height: 500px;
+        background-image: url('../assets/img/trabalhe-conosco.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
         width: 100%;
-        position: relative;
-        overflow: hidden;
+        height: 450px;
+
     }
     h2{
-        position: absolute;
+        
         color: white;
-        top: 150px;
-        left: 30%;
-        right: 20%;
+        padding-top: 70px;
+        padding-bottom: 40px;
         font-size: 80px;
+        text-align: center;
 
     }
     .trabalhe-conosco{
@@ -97,14 +94,10 @@ export default {
         justify-content: center;
         text-align: center;
     }
-    p{
-        position: absolute;
-        top: 350px;
+    p{     
         text-align: center;
         color: white;
-        font-weight: bolder;
-        left: 15%;
-        
+        font-weight: bolder; 
        
     }
    span{
@@ -156,44 +149,48 @@ export default {
        left: 50%;
    }
    @media (max-width: 600px){
+       section{
+            
+            background-size: 100%;
+            width: 100%;
+            height: 780px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background:url('../assets/img/trabalhe-conosco.jpg')
 
-       H2{
+
+       }  
+
+        H2{
             font-size: 55px;
-            top: 115px;
-            text-align: center;
-            left: 20px;
-       }
-       p{
-            top: 270px;
-            left: 0;
+            
+        }
+        p{
             margin-left: 20px;
             margin-right: 20px;
-       }
-       #imagem-trabalhe{
-            height: 695px;
-       }
-       .filtroVagas{
-           margin-left: 8px;
-       }
+        }
+        .filtroVagas{
+            margin-left: 8px;
+        }
         button{
-         width: 35%;
-         height: 120px;
-         margin-bottom: 10%;
-         margin-right:5%;
-         margin-left: 0;
-         
-       }
-       .icone-filtrovagas{
-           width: 75%;
-       }
-       .img-escriba{
+            width: 35%;
+            height: 120px;
+            margin-bottom: 10%;
+            margin-right:5%;
+            margin-left: 0;
+            
+        }
+        .icone-filtrovagas{
+            width: 75%;
+        }
+        .img-escriba{
             width: 70%;
             height: 70px;
             border-radius: 5px;
-       }
-       h4{
-           font-size: 55px;
-       }
+        }
+        h4{
+            font-size: 55px;
+        }
 
    }
 
