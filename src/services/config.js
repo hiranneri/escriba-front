@@ -1,5 +1,5 @@
 import axios from 'axios'
 
 export const http = axios.create({
-    baseURL:'https://trabalhe-escriba.herokuapp.com/'
+    baseURL:'https://trabalheescriba.herokuapp.com/'
 })
